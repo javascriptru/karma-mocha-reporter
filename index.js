@@ -354,8 +354,7 @@ var MochaReporter = function (baseReporterDecorator, formatError, config) {
 
                     // add all browser in which the test failed with color warning
                     for (var bi = 0; bi < item.failed.length; bi++) {
-                        var browserName = item.failed[bi];
-                        line += repeatString('  ', depth + 1) + chalk.italic(colors.warning.print(browserName)) + '\n';
+                        line += repeatString('  ', depth + 1) + '\n';
                     }
 
                     // add the error log in error color
